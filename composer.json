@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "wpackagist-plugin/gutenberg": "^3.6"
+        "wpackagist-plugin/gutenberg": "dev-master"
     },
     "repositories": [
         {
