@@ -1,3 +1,20 @@
 {
-    "require": {}
+    "name": "jmichaelward/learning-gutenberg",
+    "description": "A WordPress plugin for me to learn how to create custom Gutenberg blocks.",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Jeremy Ward",
+            "email": "jeremy@jmichaelward.com"
+        }
+    ],
+    "require": {
+        "wpackagist-plugin/gutenberg": "^3.6"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ]
 }
