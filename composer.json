@@ -9,7 +9,8 @@
         }
     ],
     "require": {
-        "webdevstudios/oops-wp": "dev-master"
+        "webdevstudios/oops-wp": "dev-master",
+        "jmichaelward/hello-gutenberg": "dev-master"
     },
     "repositories": [
         {
@@ -19,6 +20,10 @@
         {
             "type": "composer",
             "url": "https://packages.jmichaelward.com"
+        },
+        {
+            "type": "git",
+            "url": "git@github.com:jmichaelward/hello-gutenberg.git"
         }
     ],
     "autoload": {

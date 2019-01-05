@@ -24,7 +24,7 @@ class Plugin extends ServiceRegistrar {
 	 * @since  2019-01-04
 	 */
 	public function __construct( $plugin_path ) {
-		$this->root_path = $plugin_path;
+		$this->file_path = $plugin_path;
 	}
 
 	/**

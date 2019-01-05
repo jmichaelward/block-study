@@ -9,10 +9,9 @@
 
 namespace JMichaelWard\BlockStudy\Service;
 
-use JMichaelWard\BlockStudy\WP\EditorBlock;
+use JMichaelWard\WPBlock as Block;
+use WebDevStudios\OopsWP\Structure\Editor\EditorBlock;
 use WebDevStudios\OopsWP\Structure\Service;
-use JMichaelWard\BlockStudy\WP\Block;
-use WebDevStudios\OopsWP\Utility\RootPathDependent;
 
 /**
  * Class NativeBlockService
@@ -22,8 +21,6 @@ use WebDevStudios\OopsWP\Utility\RootPathDependent;
  * @since   2019-01-04
  */
 class NativeBlockService extends Service {
-	use RootPathDependent;
-
 	/**
 	 * Blocks with which to register to WordPress.
 	 *
@@ -31,7 +28,7 @@ class NativeBlockService extends Service {
 	 * @since 2019-01-04
 	 */
 	protected $blocks = [
-		Block\HelloWorld::class,
+		Block\HelloGutenberg::class,
 	];
 
 	/**
@@ -44,7 +41,6 @@ class NativeBlockService extends Service {
 		/** @var $block EditorBlock Instance of an EditorBlock */
 		foreach ( $this->blocks as $block_class ) {
 			$block = new $block_class();
-			$block->set_root_path( $this->root_path );
 			$block->register();
 		}
 	}
