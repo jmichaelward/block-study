@@ -1,10 +1,10 @@
 <?php
-namespace JMichaelWard\LearningGutenberg;
+namespace JMichaelWard\BlockStudy;
 
 /**
  * Class Plugin
  *
- * @package JMichaelWard\LearningGutenberg
+ * @package JMichaelWard\BlockStudy
  */
 class Plugin {
 	/**

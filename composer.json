@@ -1,6 +1,6 @@
 {
-    "name": "jmichaelward/learning-gutenberg",
-    "description": "A WordPress plugin for me to learn how to create custom Gutenberg blocks.",
+    "name": "jmichaelward/block-study",
+    "description": "A WordPress plugin to study registering custom editor blocks in version 5+",
     "type": "wordpress-plugin",
     "authors": [
         {
@@ -8,9 +8,7 @@
             "email": "jeremy@jmichaelward.com"
         }
     ],
-    "require": {
-        "wpackagist-plugin/gutenberg": "dev-master"
-    },
+    "require": {},
     "repositories": [
         {
             "type": "composer",
@@ -19,7 +17,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "JMichaelWard\\LearningGutenberg\\": "src/"
+            "JMichaelWard\\BlockStudy\\": "src/"
         }
     }
 }
