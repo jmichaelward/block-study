@@ -1,23 +1,39 @@
 <?php
+/**
+ * Main class to kick off our plugin and its collection of services.
+ *
+ * @package JMichaelWard\BlockStudy
+ */
 namespace JMichaelWard\BlockStudy;
+
+use WebDevStudios\OopsWP\Structure\ServiceRegistrar;
+use JMichaelWard\BlockStudy\Service;
 
 /**
  * Class Plugin
  *
  * @package JMichaelWard\BlockStudy
  */
-class Plugin {
+class Plugin extends ServiceRegistrar {
 	/**
-	 * Run the plugin.
+	 * Plugin constructor.
+	 *
+	 * @param $plugin_path
+	 *
+	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @since  2019-01-04
 	 */
-	public function run() {
-		$this->register_hooks();
+	public function __construct( $plugin_path ) {
+		$this->root_path = $plugin_path;
 	}
 
 	/**
-	 * Register any custom hooks required by this plugin.
+	 * Collection of services this plugin will run.
+	 *
+	 * @var array
+	 * @since 2019-01-04
 	 */
-	public function register_hooks() {
-		// @TODO Gotta add some hooks, aye?
-	}
+	protected $services = [
+		Service\NativeBlockService::class,
+	];
 }
