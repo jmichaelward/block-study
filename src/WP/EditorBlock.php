@@ -31,6 +31,7 @@ abstract class EditorBlock implements Registerable {
 	 */
 	public function register() {
 		$this->register_script();
+		$this->register_style();
 		$this->register_type();
 	}
 
@@ -41,6 +42,13 @@ abstract class EditorBlock implements Registerable {
 	 * @since  2019-01-04
 	 */
 	abstract public function register_script();
+
+	/**
+	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
+	 * @since  2019-01-05
+	 * @return mixed
+	 */
+	abstract public function register_style();
 
 	/**
 	 * Register the block type information.

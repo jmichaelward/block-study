@@ -36,9 +36,17 @@ class HelloWorld extends EditorBlock {
 	 */
 	public function register_script() {
 		wp_register_script(
-			$this->block_name,
+			"{$this->block_name}-js",
 			plugins_url( "block-study/assets/wp/{$this->block_name}/block.js" ), // @TODO Add a file path to OOPS-WP.
 			[ 'wp-blocks', 'wp-i18n', 'wp-element' ]
+		);
+	}
+
+	public function register_style() {
+		wp_register_style(
+			"{$this->block_name}-css",
+			plugins_url( "block-study/assets/wp/{$this->block_name}/editor.css" ),
+			[ 'wp-edit-blocks' ]
 		);
 	}
 
@@ -50,7 +58,8 @@ class HelloWorld extends EditorBlock {
 	public function register_type() {
 		// Block Type must include a namespace, or it will not render!
 		register_block_type( "jmichaelward/{$this->block_name}", [
-			'editor_script' => $this->block_name,
+			'editor_script' => "{$this->block_name}-js",
+			'editor_style' => "{$this->block_name}-css",
 		] );
 	}
 }
