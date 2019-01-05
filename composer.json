@@ -8,11 +8,17 @@
             "email": "jeremy@jmichaelward.com"
         }
     ],
-    "require": {},
+    "require": {
+        "webdevstudios/oops-wp": "dev-master"
+    },
     "repositories": [
         {
             "type": "composer",
             "url": "https://wpackagist.org"
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.jmichaelward.com"
         }
     ],
     "autoload": {
