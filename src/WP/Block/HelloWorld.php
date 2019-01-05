@@ -59,7 +59,8 @@ class HelloWorld extends EditorBlock {
 		// Block Type must include a namespace, or it will not render!
 		register_block_type( "jmichaelward/{$this->block_name}", [
 			'editor_script' => "{$this->block_name}-js",
-			'editor_style' => "{$this->block_name}-css",
+			'editor_style' => "{$this->block_name}-css", // Editor stylesheet.
+			'style' => "{$this->block_name}-css", // Frontend stylesheet.
 		] );
 	}
 }
