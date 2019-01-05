@@ -28,7 +28,10 @@
     ],
     "autoload": {
         "psr-4": {
-            "JMichaelWard\\BlockStudy\\": "src/"
+            "JMichaelWard\\BlockStudy\\": "src/",
+            "JMichaelWard\\WPBlock\\": [
+                "blocks/HelloGutenbergEditable/src/"
+            ]
         }
     }
 }
