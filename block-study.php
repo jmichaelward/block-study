@@ -7,10 +7,11 @@
  * Version: 0.0.0
  */
 
-$plugin_dir = plugin_dir_path( __FILE__ );
-$autoload   = "{$plugin_dir}/vendor/autoload.php";
+$autoload = plugin_dir_path( __FILE__ ) . '/vendor/autoload.php';
 
 if ( is_readable( $autoload ) ) {
 	require_once $autoload;
 }
 
+$plugin = new \JMichaelWard\BlockStudy\Plugin();
+$plugin->run();
