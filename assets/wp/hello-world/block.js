@@ -9,8 +9,8 @@
     icon: 'universal-access-alt',
     category: 'layout',
 
-    edit: function() {
-      return el('p', {style: blockStyle}, 'Hello editor.');
+    edit: function( props ) {
+      return el('p', {style: blockStyle, className: props.className}, 'Hello editor.');
     },
 
     save: function() {
