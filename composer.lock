@@ -132,7 +132,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:jmichaelward/hello-gutenberg.git",
-                "reference": "56d8636094ee4657853493d9ddc73e2a1935914d"
+                "reference": "bf1a0d6bd3b76b1b191fff71151c8fe2cb19a082"
             },
             "require": {
                 "composer/installers": "^1.6",
@@ -141,11 +141,11 @@
             "type": "wordpress-block",
             "autoload": {
                 "psr-4": {
-                    "JMichaelWard\\WPBlock\\": "src/"
+                    "JMichaelWard\\WPBlock\\": "/"
                 }
             },
             "description": "Implementation of the Hello World Gutenberg block in a Composer-installable package.",
-            "time": "2019-01-05T18:23:35+00:00"
+            "time": "2019-02-17T00:09:53+00:00"
         },
         {
             "name": "webdevstudios/oops-wp",
