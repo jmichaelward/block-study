@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:jmichaelward/hello-gutenberg.git",
-                "reference": "9ef131cd40665f490c48cff0d7d6f25d1003e980"
+                "reference": "52a8bc08869fc5e7203c11c99bdc4469b1252b5d"
             },
             "require": {
                 "jmichaelward/wp-editor-block-installer": "dev-master",
@@ -24,11 +24,11 @@
             },
             "autoload": {
                 "psr-4": {
-                    "JMichaelWard\\WPBlock\\": "/"
+                    "JMichaelWard\\WPBlock\\": "src/"
                 }
             },
             "description": "Implementation of the Hello World Gutenberg block in a Composer-installable package.",
-            "time": "2019-02-17T01:00:58+00:00"
+            "time": "2019-02-17T01:24:33+00:00"
         },
         {
             "name": "jmichaelward/wp-editor-block-installer",
@@ -36,12 +36,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmichaelward/wp-editor-block-installer.git",
-                "reference": "a2785d5e8cfa2ebf2808c3f276f13053eebf227f"
+                "reference": "54f72c04a7620a0d603635aaab1ea0ebdde94a36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jmichaelward/wp-editor-block-installer/zipball/a2785d5e8cfa2ebf2808c3f276f13053eebf227f",
-                "reference": "a2785d5e8cfa2ebf2808c3f276f13053eebf227f",
+                "url": "https://api.github.com/repos/jmichaelward/wp-editor-block-installer/zipball/54f72c04a7620a0d603635aaab1ea0ebdde94a36",
+                "reference": "54f72c04a7620a0d603635aaab1ea0ebdde94a36",
                 "shasum": ""
             },
             "require": {
@@ -72,7 +72,7 @@
                 }
             ],
             "description": "Composer installer for custom WordPress editor block components.",
-            "time": "2019-02-17T00:44:27+00:00"
+            "time": "2019-02-17T01:20:04+00:00"
         },
         {
             "name": "webdevstudios/oops-wp",
