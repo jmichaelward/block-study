@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "150e6eef6f9d59167faa4d4e21070376",
+    "content-hash": "f40c7e484a6b4cb51b35ed56346bf4e4",
     "packages": [
         {
             "name": "composer/installers",
@@ -132,9 +132,10 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:jmichaelward/hello-gutenberg.git",
-                "reference": "695b8142558c6afcb93b61f746d78199021d357b"
+                "reference": "1e3a9bae75ade2625e4e3baadfec7bfd6209333b"
             },
             "require": {
+                "composer/installers": "*",
                 "jmichaelward/wp-editor-block-installer": "^0.1",
                 "webdevstudios/oops-wp": "dev-master"
             },
@@ -148,7 +149,7 @@
                 }
             },
             "description": "Implementation of the Hello World Gutenberg block in a Composer-installable package.",
-            "time": "2019-02-17T17:19:10+00:00"
+            "time": "2019-02-17T17:53:15+00:00"
         },
         {
             "name": "jmichaelward/wp-editor-block-installer",

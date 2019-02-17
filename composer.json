@@ -35,5 +35,10 @@
                 "blocks/HelloGutenbergEditable/src/"
             ]
         }
+    },
+    "extra": {
+        "installer-paths": {
+            "blocks/{$name}": ["type:wordpress-block"]
+        }
     }
 }
