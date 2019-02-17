@@ -11,7 +11,8 @@
     ],
     "require": {
         "webdevstudios/oops-wp": "dev-master",
-        "jmichaelward/hello-gutenberg": "dev-master"
+        "jmichaelward/hello-gutenberg": "dev-master",
+        "composer/installers": "^1.0@dev"
     },
     "repositories": [
         {
