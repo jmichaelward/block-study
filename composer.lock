@@ -4,148 +4,75 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d016bffd9bbbdd22667df43aabb5facd",
+    "content-hash": "61666587b92e37ec461b2707cefbdec9",
     "packages": [
-        {
-            "name": "composer/installers",
-            "version": "v1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/composer/installers.git",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
-                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0"
-            },
-            "replace": {
-                "roundcube/plugin-installer": "*",
-                "shama/baton": "*"
-            },
-            "require-dev": {
-                "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "^4.8.36"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Composer\\Installers\\Plugin",
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Composer\\Installers\\": "src/Composer/Installers"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kyle Robinson Young",
-                    "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama"
-                }
-            ],
-            "description": "A multi-framework Composer library installer",
-            "homepage": "https://composer.github.io/installers/",
-            "keywords": [
-                "Craft",
-                "Dolibarr",
-                "Eliasis",
-                "Hurad",
-                "ImageCMS",
-                "Kanboard",
-                "Lan Management System",
-                "MODX Evo",
-                "Mautic",
-                "Maya",
-                "OXID",
-                "Plentymarkets",
-                "Porto",
-                "RadPHP",
-                "SMF",
-                "Thelia",
-                "WolfCMS",
-                "agl",
-                "aimeos",
-                "annotatecms",
-                "attogram",
-                "bitrix",
-                "cakephp",
-                "chef",
-                "cockpit",
-                "codeigniter",
-                "concrete5",
-                "croogo",
-                "dokuwiki",
-                "drupal",
-                "eZ Platform",
-                "elgg",
-                "expressionengine",
-                "fuelphp",
-                "grav",
-                "installer",
-                "itop",
-                "joomla",
-                "kohana",
-                "laravel",
-                "lavalite",
-                "lithium",
-                "magento",
-                "majima",
-                "mako",
-                "mediawiki",
-                "modulework",
-                "modx",
-                "moodle",
-                "osclass",
-                "phpbb",
-                "piwik",
-                "ppi",
-                "puppet",
-                "pxcms",
-                "reindex",
-                "roundcube",
-                "shopware",
-                "silverstripe",
-                "sydes",
-                "symfony",
-                "typo3",
-                "wordpress",
-                "yawik",
-                "zend",
-                "zikula"
-            ],
-            "time": "2018-08-27T06:10:37+00:00"
-        },
         {
             "name": "jmichaelward/hello-gutenberg",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git@github.com:jmichaelward/hello-gutenberg.git",
-                "reference": "bf1a0d6bd3b76b1b191fff71151c8fe2cb19a082"
+                "reference": "9ef131cd40665f490c48cff0d7d6f25d1003e980"
             },
             "require": {
-                "composer/installers": "^1.6",
+                "jmichaelward/wp-editor-block-installer": "dev-master",
                 "webdevstudios/oops-wp": "dev-master"
             },
             "type": "wordpress-block",
+            "extra": {
+                "installer-name": "hello-gutenberg"
+            },
             "autoload": {
                 "psr-4": {
                     "JMichaelWard\\WPBlock\\": "/"
                 }
             },
             "description": "Implementation of the Hello World Gutenberg block in a Composer-installable package.",
-            "time": "2019-02-17T00:09:53+00:00"
+            "time": "2019-02-17T01:00:58+00:00"
+        },
+        {
+            "name": "jmichaelward/wp-editor-block-installer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jmichaelward/wp-editor-block-installer.git",
+                "reference": "a2785d5e8cfa2ebf2808c3f276f13053eebf227f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jmichaelward/wp-editor-block-installer/zipball/a2785d5e8cfa2ebf2808c3f276f13053eebf227f",
+                "reference": "a2785d5e8cfa2ebf2808c3f276f13053eebf227f",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.8"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": [
+                    "JMichaelWard\\ComposerInstaller\\WPEditorBlockInstallerPlugin"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "JMichaelWard\\ComposerInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "gpl-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Ward",
+                    "email": "jeremy@jmichaelward.com"
+                }
+            ],
+            "description": "Composer installer for custom WordPress editor block components.",
+            "time": "2019-02-17T00:44:27+00:00"
         },
         {
             "name": "webdevstudios/oops-wp",
@@ -186,7 +113,7 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "webdevstudios/oops-wp": 20,
         "jmichaelward/hello-gutenberg": 20

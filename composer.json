@@ -2,6 +2,7 @@
     "name": "jmichaelward/block-study",
     "description": "A WordPress plugin to study registering custom editor blocks in version 5+",
     "type": "wordpress-plugin",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Jeremy Ward",
