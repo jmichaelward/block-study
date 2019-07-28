@@ -20,10 +20,6 @@
             "url": "https://wpackagist.org"
         },
         {
-            "type": "composer",
-            "url": "https://packages.jmichaelward.com"
-        },
-        {
             "type": "git",
             "url": "git@github.com:jmichaelward/hello-gutenberg.git"
         }
