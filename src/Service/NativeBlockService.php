@@ -30,6 +30,7 @@ class NativeBlockService extends Service {
 	protected $blocks = [
 		Block\HelloGutenberg::class,
 		Block\HelloGutenbergEditable::class,
+		Block\AnotherGutenbergEditable::class,
 	];
 
 	/**

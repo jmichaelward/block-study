@@ -32,7 +32,8 @@
         "psr-4": {
             "JMichaelWard\\BlockStudy\\": "src/",
             "JMichaelWard\\WPBlock\\": [
-                "blocks/HelloGutenbergEditable/src/"
+                "blocks/HelloGutenbergEditable/src/",
+                "blocks/AnotherGutenbergEditable/src"
             ]
         }
     },
