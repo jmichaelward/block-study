@@ -7,13 +7,18 @@
  * Version: 0.0.0
  */
 
+use JMichaelWard\BlockStudy\Plugin;
+
 $plugin_path = plugin_dir_path( __FILE__ );
-$autoload = $plugin_path . '/vendor/autoload.php';
+$autoload    = $plugin_path . '/vendor/autoload.php';
 
 if ( is_readable( $autoload ) ) {
 	require_once $autoload;
 }
 
-$plugin = new \JMichaelWard\BlockStudy\Plugin( $plugin_path );
-$plugin->run();
+if ( ! class_exists( 'JMichaelWard\BlockStudy\Plugin' ) ) {
+	// @TODO Throw a notice here.
+	return;
+}
 
+add_action( 'plugins_loaded', [ new Plugin( $plugin_path ), 'run' ] );
