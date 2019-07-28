@@ -35,8 +35,8 @@ class HelloGutenbergEditable extends EditorBlock {
 	public function register_script() {
 		wp_register_script(
 			"{$this->block_name}-js",
-			plugins_url( '/assets/block.js', dirname( __FILE__ ) ),
-			[ 'wp-blocks', 'wp-i18n', 'wp-element' ]
+			plugins_url( '/blocks/assets/dist/HelloGutenbergEditable/block.js', dirname( __FILE__, 3 ) ),
+			[ 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor' ]
 		);
 	}
 
@@ -54,7 +54,7 @@ class HelloGutenbergEditable extends EditorBlock {
 
 		wp_register_style(
 			"{$this->block_name}-style-css",
-			plugins_Url( '/assets/style.css', dirname( __FILE__ ) ),
+			plugins_url( '/assets/style.css', dirname( __FILE__ ) ),
 			[ 'wp-edit-blocks' ]
 		);	}
 
