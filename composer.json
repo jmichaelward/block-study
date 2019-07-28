@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "webdevstudios/oops-wp": "dev-master",
+        "webdevstudios/oops-wp": "^0.2",
         "jmichaelward/hello-gutenberg": "dev-master",
         "composer/installers": "^1.0@dev"
     },

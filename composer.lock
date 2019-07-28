@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f40c7e484a6b4cb51b35ed56346bf4e4",
+    "content-hash": "d71bc93c33a9eb1f1e6f770760286875",
     "packages": [
         {
             "name": "composer/installers",
@@ -132,12 +132,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:jmichaelward/hello-gutenberg.git",
-                "reference": "9f9b782ff90de81f8396154d911dacc832c73d49"
+                "reference": "c8cc9709aa07f78fcbc63dbc47bae08e602758ca"
             },
             "require": {
                 "composer/installers": "*",
                 "jmichaelward/wp-editor-block-installer": "^0.1",
-                "webdevstudios/oops-wp": "dev-master"
+                "webdevstudios/oops-wp": "^0.2"
             },
             "type": "wordpress-block",
             "extra": {
@@ -149,7 +149,7 @@
                 }
             },
             "description": "Implementation of the Hello World Gutenberg block in a Composer-installable package.",
-            "time": "2019-02-17T19:53:16+00:00"
+            "time": "2019-07-28T18:41:05+00:00"
         },
         {
             "name": "jmichaelward/wp-editor-block-installer",
@@ -197,17 +197,17 @@
         },
         {
             "name": "webdevstudios/oops-wp",
-            "version": "dev-master",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:jmwcomposer/oops-wp.git",
-                "reference": "777573e4e40a1866b10621310777658ba2c33677"
+                "url": "https://github.com/WebDevStudios/oops-wp.git",
+                "reference": "bda6b19e002748b0ff1344ad5aee5f2685f78a4f"
             },
             "dist": {
-                "type": "tar",
-                "url": "https://packages.jmichaelward.com/dist/webdevstudios/oops-wp/webdevstudios-oops-wp-dev-master-3e5ff9.tar",
-                "reference": "777573e4e40a1866b10621310777658ba2c33677",
-                "shasum": "7703df48ac106e54e112308b32aca29ec4256df1"
+                "type": "zip",
+                "url": "https://api.github.com/repos/WebDevStudios/oops-wp/zipball/bda6b19e002748b0ff1344ad5aee5f2685f78a4f",
+                "reference": "bda6b19e002748b0ff1344ad5aee5f2685f78a4f",
+                "shasum": ""
             },
             "require": {
                 "php": "^7"
@@ -218,6 +218,7 @@
                     "WebDevStudios\\OopsWP\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -229,14 +230,13 @@
                 }
             ],
             "description": "A collection of interfaces and class structures to promote object-oriented programming practices in WordPress.",
-            "time": "2019-01-05T18:10:02+00:00"
+            "time": "2019-04-01T22:18:00+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "webdevstudios/oops-wp": 20,
         "jmichaelward/hello-gutenberg": 20,
         "composer/installers": 20
     },
