@@ -1,0 +1,17 @@
+{
+  "name": "block-study",
+  "version": "1.0.0",
+  "repository": "git@github.com:jmichaelward/block-study.git",
+  "author": "Jeremy Ward <jeremy.ward@webdevstudios.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel blocks/*/*.js",
+    "build": "parcel build blocks/*/*.js --out-dir=blocks/assets/dist"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "wp": "^0.0.3"
+  }
+}
