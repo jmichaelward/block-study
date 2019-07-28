@@ -10,7 +10,7 @@
 use JMichaelWard\BlockStudy\Plugin;
 
 $plugin_path = plugin_dir_path( __FILE__ );
-$autoload    = $plugin_path . '/vendor/autoload.php';
+$autoload    = $plugin_path . 'vendor/autoload.php';
 
 if ( is_readable( $autoload ) ) {
 	require_once $autoload;
