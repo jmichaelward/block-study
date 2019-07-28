@@ -1,3 +1,6 @@
 /vendor/
 /blocks/*
 !/blocks/HelloGutenbergEditable
+!/blocks/AnotherGutenbergEditable
+/.cache
+/node_modules/
