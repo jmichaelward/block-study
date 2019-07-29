@@ -1,44 +1,64 @@
-const {blocks, i18n, element, editor} = wp;
+const {__} = wp.i18n;
+const {registerBlockType} = wp.blocks;
+const {
+  RichText,
+  BlockControls,
+  AlignmentToolbar,
+} = wp.editor;
 
 export default function anotherGutenbergEditable() {
-  blocks.registerBlockType('jmichaelward/another-gutenberg-editable', {
-    title: 'JMW Another Gutenberg Editable',
+  registerBlockType('jmichaelward/another-gutenberg-editable', {
+    title: __('JMW Another Gutenberg Editable'),
     icon: 'universal-access-alt',
     category: 'layout',
     attributes: {
       content: {
-        type: 'string',
-        source: 'html',
+        type: 'array',
+        source: 'children',
         selector: 'p',
       },
     },
 
-    edit: function(props) {
-      var content = props.attributes.content;
+    edit: ({attributes, className, setAttributes}) => {
+      const {alignment, content} = attributes;
+      const onChangeContent = (newContent) => {
+        setAttributes({content: newContent});
+      };
 
-      function onChangeContent(newContent) {
-        props.setAttributes({content: newContent});
-      }
+      const onChangeAlignment = (newAlignment) => {
+        const alignmentValue = (undefined === newAlignment ?
+            'none' :
+            newAlignment);
+        setAttributes({alignment: alignmentValue});
+      };
 
-      return element.createElement(
-          editor.RichText,
-          {
-            tagName: 'p',
-            className: props.className,
-            onChange: onChangeContent,
-            value: content,
-          },
+      return (
+          <div className={className}>
+            {
+              <BlockControls>
+                <AlignmentToolbar value={alignment}
+                                  onChange={onChangeAlignment}/>
+              </BlockControls>
+            }
+            <RichText.Content
+                className={className}
+                tagName="p"
+                onChange={onChangeContent}
+                value={content}
+            />
+          </div>
       );
     },
 
-    save: function(props) {
-      var content = props.attributes.content;
-
-      return element.createElement(editor.RichText.Content, {
-        tagName: 'p',
-        className: props.className,
-        value: content,
-      });
+    save: ({attributes, className}) => {
+      const {alignment, content} = attributes;
+      return (
+          <RichText.Content
+              className={className}
+              tagName="p"
+              value={content}
+          />
+      );
     },
   });
 }
