@@ -9,9 +9,18 @@
     "build": "parcel build blocks/*/*.js --out-dir=blocks/assets/dist"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@wordpress/babel-preset-default": "^4.3.0",
+    "@wordpress/blocks": "^6.4.0",
+    "@wordpress/element": "^2.5.0",
     "parcel-bundler": "^1.12.3"
   },
   "dependencies": {
     "wp": "^0.0.3"
+  },
+  "babel": {
+    "presets": [
+      "@wordpress/default"
+    ]
   }
 }
